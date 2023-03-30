@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: "Hanken Grotesk";
+}
+.main-flex {
+	display: flex;
+	min-height: 50vh;
+	width: 80vh;
+	background-color: hsl(0, 0%, 100%);
+	box-shadow: 0.5rem 1rem 3rem rgb(48 59 90 / 0.4);
+}
+.flex-1,
+.flex-2 {
+	flex: 1;
+}
+.violet-card {
+	display: flex;
+	flex-direction: column;
+	background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	border-radius: 25px;
+
+	align-items: center;
+	gap: 1rem;
+}
+
+.middle-card {
+	width: 175px;
+	height: 175px;
+	border-radius: 50%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-image: linear-gradient(
+		hsla(256, 72%, 46%, 1),
+		hsla(241, 72%, 46%, 0)
+	);
+}
+.bottom-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-left: 3.2rem;
+	margin-right: 3.2rem;
+	gap: 1rem;
+	padding-bottom: 3rem;
+}
+.middle-card h1,
+.middle-card p {
+	color: hsl(221, 100%, 96%);
+}
+header {
+	margin-top: 2rem;
+}
+header h1 {
+	font-size: 1.2rem;
+	color: hsl(241, 100%, 89%);
+}
+.middle-card h1 {
+	font-size: 3.5rem;
+}
+.middle-card p {
+	color: hsl(241, 100%, 89%);
+}
+.bottom-card h1 {
+	font-size: 1.5rem;
+	color: hsl(241, 100%, 89%);
+}
+.bottom-card p {
+	color: hsl(241, 100%, 89%);
+	margin: 0rem -0.5rem;
+}
+/* LEWA STRONA */
+/* LEWA STRONA */
+/* LEWA STRONA */
+.white-card {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+}
+.stats {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+.flex-row-white-card {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem;
+	border-radius: 10px;
+}
+.flex-row-white-card h4 {
+	margin-right: 0.3rem;
+	color: hsl(224, 30%, 27%);
+}
+.flex-row-white-card p {
+	color: rgb(48 59 90/ 0.5);
+	font-weight: bold;
+}
+.flex-row-white-card:nth-child(1) {
+	margin-top: 2rem;
+}
+.left-row {
+	display: flex;
+	justify-content: flex-start;
+	flex: 1;
+	gap: 1rem;
+}
+.right-row {
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+	align-items: center;
+}
+.red {
+	background-color: hsla(0, 100%, 67%, 10%);
+}
+.red h2 {
+	color: hsl(0, 100%, 67%);
+}
+.yellow {
+	background-color: hsla(39, 100%, 56%, 10%);
+}
+.yellow h2 {
+	color: hsl(39, 100%, 56%);
+}
+.green {
+	background-color: hsla(166, 100%, 37%, 10%);
+}
+.green h2 {
+	color: hsl(166, 100%, 37%);
+}
+.blue {
+	background-color: hsla(234, 85%, 45%, 10%);
+}
+.blue h2 {
+	color: hsl(234, 85%, 45%);
+	display: flex;
+}
+
+.white-card button {
+	border: none;
+	border-radius: 40px;
+	padding: 1.2rem;
+	background: hsl(224, 30%, 27%);
+	color: white;
+}
+.white-card button p {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+@media (max-width: 685px) {
+	.main-flex {
+		display: grid;
+		grid-template-areas: "one" "two";
+		grid-auto-columns: 1fr;
+	}
+	.flex-1 {
+		grid-area: one;
+	}
+	.flex-2 {
+		grid-area: two;
+	}
+	.violet-card {
+		border-radius: 0px 0px 40px 40px;
+		gap: 1rem;
+	}
+	.bottom-card p {
+		margin: 0rem 0.5rem;
+	}
+	.white-card {
+		padding: 2rem;
+	}
+	.flex-row-white-card:nth-child(1) {
+		margin-top: 1rem;
+	}
+}
